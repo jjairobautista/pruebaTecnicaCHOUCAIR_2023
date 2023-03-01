@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><testsuite errors="0" failures="1" name="Realizar validacion E2E del servicio Dummy" skipped="0" tests="1" time="0.83" timestamp="2023-03-01 02:16:48"><testcase name="Validacion de consulta de empleados"><failure message="Expected last response status code&#13;&#10;Expected: is &lt;true&gt;&#13;&#10;     but: was &lt;false&gt;" type="java.lang.AssertionError">Expected last response status code&#13;
+Expected: is &lt;true&gt;&#13;
+     but: was &lt;false&gt;</failure><system-err>Expected last response status code&#13;
+Expected: is &lt;true&gt;&#13;
+     but: was &lt;false&gt;&#13;
+stepdefinitions.ValidacionServicioDummy.validacionDelCodigoDeRespuesta(ValidacionServicioDummy.java:35)&#13;
+✽.Validacion del codigo de respuesta 200(file:///C:/Users/JhonB/IdeaProjects/co.com.choucair.pruebatecnica/src/test/resources/features/ConsultaEmpleados.feature:9)&#13;
+</system-err></testcase></testsuite>

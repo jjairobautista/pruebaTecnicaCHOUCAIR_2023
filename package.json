@@ -1,0 +1,5 @@
+{
+  "scripts": {
+    "postinstall": "serenity-bdd update"
+  }
+}

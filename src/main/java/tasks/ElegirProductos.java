@@ -45,7 +45,6 @@ public class ElegirProductos implements Task {
             prodEleccion.add(pos);
 
         }
-        System.out.println(prodEleccion.toString());
 
         for (int i = 0; i < prodEleccion.size(); i++) {
             int cUnidades = (int) (Math.random() * 5 + 1);
@@ -71,14 +70,11 @@ public class ElegirProductos implements Task {
                 }
             }
             String nombre = Text.of(categoriaCeularesIphone.NOMBRE_CELULAR.of(String.valueOf(prodEleccion.get(i)))).answeredBy(actor).toString();
-            String unidadesP = Text.of(categoriaCeularesIphone.UNIDADES_CELULAR.of(String.valueOf(prodEleccion.get(i)))).answeredBy(actor).toString();
+            String unidadesP = (Text.of(categoriaCeularesIphone.UNIDADES_CELULAR.of(String.valueOf(prodEleccion.get(i)))).answeredBy(actor).toString());
 
-                    nombreProductos.add(nombre);
+                    nombreProductos.add(nombre + "["+unidadesP.charAt(0)+"]");
 
         }
-        System.out.println("****************************************************************");
-        System.out.println("lista de productos y canitdades\n"+nombreProductos.toString());
-        System.out.println("****************************************************************");
 
         actor.attemptsTo(RememberThat.theValueOf("nomCantidad").is(nombreProductos));
 
